@@ -1,1 +1,3 @@
-# 1030522950_BS436_WebProgramlama
+# Öğrenci Numarası:1030522950
+# Öğrenci Adı:Ömer Faruk ERENLER
+# Ders Adı:BS436 Web Programlama 
