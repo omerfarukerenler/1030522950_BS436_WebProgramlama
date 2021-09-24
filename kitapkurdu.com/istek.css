@@ -1,0 +1,131 @@
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+
+}
+
+
+.resim {
+    width: 100px;
+    height: 75px;
+    float: right;
+}
+
+.resim1 {
+    float: left
+}
+
+.header-banner {
+    text-align: center;
+    font-family: cursive;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: orange;
+}
+
+#id1{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    font-family: Bradley Hand, cursive;
+    color: #4bb544;
+    padding-right: 30px;
+}
+
+#button3{
+    border-style: none;
+    font-family: inherit;
+    background-color : gold;
+    color: #ffffff;
+}
+#button4{
+    border-style: none;
+    font-family: inherit;
+    background-color : gold;
+    color: #ffffff;
+
+
+}
+#istekicon{
+    width: 20%;
+
+}
+#search{
+
+}
+.container{
+    font-family: "AR CENA", cursive;
+    background-color: #4bb544;
+
+
+}
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="icon" href="warm.ico.png">
+    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h3 class="baslik">Kitap Tartışma Formuna HoşGeldiniz!</h3>
+<br><br>
+
+<div class="container">
+    <img src="illus_1.png" alt=""> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="illus_2.png" alt=""> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="illus_3.png" alt="">
+
+
+        <label for="country">Kitap ismi giriniz : </label>
+        <select id="country" name="country">
+            <option value="australia">Momo</option>
+            <option value="canada">Hayvan Çifliği</option>
+            <option value="usa">1984</option>
+            <option value="usa">Simyacı</option>
+            <option value="usa">Veronika Ölmek İstiyor</option>
+            <option value="usa">Muteşem Gatsby</option>
+            <option value="usa">Kayıp Tanrılar Ülkesi</option>
+            <option value="usa">Otomatik Portakal</option>
+            <option value="usa">İkigai</option>
+            <option value="usa">İçinde Bir Sen(9'lu set)</option>
+
+            <input type="text" id="textbox" name="firstname" placeholder="Kitap hakkındaki görüş ve düşünceleriniz.."/>
+            <button id="button10" onclick="Goster()">Gonder</button>
+            <br><br>
+
+
+        </select>
+
+
+
+</div>
+
+
+<div class="container">
+
+    <ul class="timeline">
+        <li>
+            <a target="_blank" href="">MehmetCan Arslanoğlu</a>
+            <a href="#" class="float-right">21 March, 2021</a>
+            <p>Kitap gerçekten çok güzel.İçindeki hikaye bize gercek hayattan kesitler sunuyor.Her yaştan insanın alıp okunamasını tavsiye ederim</p>
+        </li>
+        <li>
+            <a href="#">Ahmet Yüksel</a>
+            <a href="#" class="float-right">4 March, 2021</a>
+            <p>Momo bir çocuk kitabı olmanın çok ötesinde bir kitap. İnsanların kendilerine daha fazla zaman ayırmak için daha fazla çalışmaları gerektiğini ama bunu yaparken de kendilerine ayıracak hiç zamanları kalmamasını anlatıyor. E tüm zaman daha fazla zaman için harcadığında çocuklar ihmal ediliyor. Onlar tek tip yerlerde toplanıyor. Yani bizim modern zamanımızdaki okullarda. Nasıl biz daha çok zaman için çalışıp mutlu olmamız gerekirken mutsuz oluyorsak onlar da mutsuz oluyor. İnsanlar sinirli, eğlenmeyi bilmeyen, gülümsemeyi unutan, tahammülsüz yaratıklar oluyor. Duman adamlar gibi griye bürünüyor insanlar, tüm şehir, tüm duygular,tüm dünya. Hiç sıcaklık kalmıyor herkesin içinde samimiyetsiz bir soğukluk. Tüm dünya onlara yeniliyor. Peki bilin bakalım yenemedikleri tek düşmanları kim? Doğru tahmin Momo. Momo'nun ders niteliğindeki masalsı öyküsünü mutlaka herkes okumalı. 😊</p>
+        </li>
+        <li>
+            <a href="#">Mustafa Kafalı</a>
+            <a href="#" class="float-right">1 April, 2021</a>
+            <p>Kitap deforme olmadan elime geçti. Kargoya verilme hızı tatmin edici. Ancak paketleme yaparken, kitap kapağına doğrudan bant yapıştırılmasını anlayamadım. Havalı naylon 2 cm daha uzun kesilebilirdi. Neyseki, kapağa zarar vermeden çıkartabildim. Daha sonraki paketlemelerinde daha dikkatli olacaklarını tahmin ettiğim için, satıcıya 5 yıldız veriyorum.</p>
+        </li>
+    </ul>
+    <ul id="messages" class="list-group-item-danger"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<script src="forum.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>

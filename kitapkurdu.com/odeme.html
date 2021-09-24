@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ödeme</title>
+    <link rel="icon" href="warm.ico.png">
+    <link rel="stylesheet" href="odeme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body>
+<img class="resim1" src="warm.ico.png">
+<img class="resim" src="kargo.jpg"
+<div class="container">
+    <div class="header-banner">
+        <h2 class="baslık">İlk Siparişe özel kargo <strong>BEDAVA</strong></h2>
+        <br>
+    </div>
+    <br>
+
+
+    <div class="row">
+        <div class="col-xs-6 col-md-4" id="id1">
+            <h4><button><a href="main.html"> Kitap Yurdu.com</a></button></h4>
+            <h5 id="id2"><small>Kitapçının tek adresi</small></h5>
+        </div>
+
+
+        <div class="col-xs-6 col-md-4">
+            <div>
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Kitap adı,yazar veya yayınevi ara" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+            <form class="form__button" id="sepet">
+                <button class="btn btn-primary" id="button3" onclick="" ><img src="yazar.png"><a href="istek.html"> Yazarlar</a></button>
+
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <button class="cart" id="button4" type="" onclick="" ><img id="istekicon" src="sepet.jpg"><a href="cart.html">Sepetim</a><span id="span">0</span></button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="chip.png" alt="">
+                <img src="visa.png" alt="">
+            </div>
+            <div class="card-number-box">################</div>
+            <div class="flexbox">
+                <div class="box">
+                    <span>Kart Sahibi</span>
+                    <div class="card-holder-name">AD-SOYAD</div>
+                </div>
+                <div class="box">
+                    <span>SON KULLANMA TARİHİ</span>
+                    <div class="expiration">
+                        <span class="exp-month">mm</span>
+                        <span class="exp-year">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <form action="">
+        <div class="inputBox">
+            <span>kart numarası</span>
+            <input type="text" maxlength="16" class="card-number-input">
+        </div>
+        <div class="inputBox">
+            <span>kart sahibi</span>
+            <input type="text" class="card-holder-input">
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>son kullanma ay</span>
+                <select name="" id="" class="month-input">
+                    <option value="month" selected disabled>ay</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>son kullanma yıl</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>yıl</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="4" class="cvv-input">
+            </div>
+        </div>
+        <input type="submit" onclick="odeme()" value="ÖDE" class="submit-btn">
+        <div id="sonuc"></div>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.querySelector('.card-number-input').oninput = () =>{
+        document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+    }
+
+    document.querySelector('.card-holder-input').oninput = () =>{
+        document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+    }
+
+    document.querySelector('.month-input').oninput = () =>{
+        document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+    }
+
+    document.querySelector('.year-input').oninput = () =>{
+        document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+    }
+
+    document.querySelector('.cvv-input').onmouseenter = () =>{
+        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+    }
+
+    document.querySelector('.cvv-input').onmouseleave = () =>{
+        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+    }
+
+    document.querySelector('.cvv-input').oninput = () =>{
+        document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+    }
+
+alert("Ödeme Ekranındasınız !");
+
+    function odeme(){
+        var e = confirm("Onaylıyor musunuz");
+        if(e == true){
+            document.getElementById("sonuc").innerHTML = "Onaylandı";
+            alert("Basarili ile ödenmiştir");
+        }
+        else{
+            document.getElementById("sonuc").innerHTML = "Onaylanmadı";
+        }
+    }
+
+
+
+
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
